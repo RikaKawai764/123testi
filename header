@@ -1,0 +1,17 @@
+class TerminalColors:
+    HEADER = '\033[95m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    ENDC = '\033[0m'
+
+
+def print_funsociety_header():
+    header = f"{TerminalColors.HEADER}{TerminalColors.BOLD}"
+    header += f"{TerminalColors.UNDERLINE}Welcome to FunSociety{TerminalColors.ENDC}"
+    header += TerminalColors.ENDC
+
+    print(header)
+
+
+# Contoh penggunaan
+print_funsociety_header()
